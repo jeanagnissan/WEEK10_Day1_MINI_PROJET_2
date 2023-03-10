@@ -1,0 +1,20 @@
+<app-title title="Create Users"></app-title>
+<form action="#" [formGroup]="testForm">
+    <div class="row form-row mb-2">
+        <div class="form-group col-md-6">
+            <label for="firstNameFields" class="mb-1">First Name</label>
+            <input type="text" class="form-control" id="firstNameFields" placeholder="First Name" name="fisrtName" formControlName="firstName">
+        </div>
+        <div class="form-group col-md-6 mb-2">
+            <label for="LastNameFields" class="mb-1">Last Name</label>
+            <input type="text" class="form-control" id="LastNameFields" placeholder="Last Name" name="lastName" formControlName="lastName">
+        </div>
+    </div>
+    <div class="row form-row mb-2">
+        <div class="col-12">
+            <label for="emailFields" class="mb-1">Email</label>
+            <input type="email" class="form-control" id="emailFields" placeholder="Email" name="email" formControlName="email">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-danger" (click)="sendData()">Create</button>
+</form>
